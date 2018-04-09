@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(void) {
+    int numero, soma = 0;
+    int num1, num2;
+    
+    printf("Informe um numero: ");
+    scanf("%d",&num1);
+    printf("Informe outro numero: ");
+    scanf("%d",&num2);
+    
+    for (numero = num1; numero <= num2; numero ++) {
+        soma = numero + soma;
+    }
+    printf("\n%d", soma);
+    printf("\n");
+    system("pause");
+    return(0);
+}
