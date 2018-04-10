@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+#include <ctype.h>
+
+int main () {
+	char letrasMaiusculas [100];
+	int i = 0,
+		k = 0,
+		tamanhoPalavra;
+	setlocale(LC_ALL,"");
+	printf("Digite uma palavra ou frase: ");
+	gets(letrasMaiusculas);
+	tamanhoPalavra = strlen(letrasMaiusculas) -1;
+	for(i = 0; i <= tamanhoPalavra; i++) {
+		if(i %2 == 0) {
+			putchar(toupper(letrasMaiusculas[i]));
+		} else
+			putchar(tolower(letrasMaiusculas[i]));
+	}
+	printf("\n");
+	system("pause");
+	return 0;
+}
