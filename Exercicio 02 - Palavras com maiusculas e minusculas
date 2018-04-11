@@ -9,7 +9,7 @@ int main () {
 	int i = 0,
 		k = 0,
 		tamanhoPalavra;
-	setlocale(LC_ALL,"");
+	setlocale(LC_ALL,"Portuguese");
 	printf("Digite uma palavra ou frase: ");
 	gets(letrasMaiusculas);
 	tamanhoPalavra = strlen(letrasMaiusculas) -1;
