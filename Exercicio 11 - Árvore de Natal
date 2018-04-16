@@ -83,7 +83,7 @@ int main () {
             }
               printf ("\n");
          }
-         //imprime o tronco da árvore. Sempre 3.
+         //imprime o tronco da árvore.
           for (m=num/1.5; m<num; m++){
               for (n=2; n<=k/2; n++)
                    printf (" ");
